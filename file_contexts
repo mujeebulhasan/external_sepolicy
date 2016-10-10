@@ -311,6 +311,12 @@
 /data/app-asec(/.*)?        u:object_r:asec_image_file:s0
 
 #############################
+# Bluetooth daemon
+/system/bin/bluetoothd             u:object_r:bluetoothd_exec:s0
+/system/bin/bluetoothd-main        u:object_r:bluetoothd_main_exec:s0
+/system/bin/bluetoothd-snoop       u:object_r:bluetoothd_snoop_exec:s0
+
+#############################
 # external storage
 /mnt/media_rw(/.*)?         u:object_r:mnt_media_rw_file:s0
 /mnt/user(/.*)?             u:object_r:mnt_user_file:s0

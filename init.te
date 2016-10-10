@@ -73,7 +73,7 @@ allow init self:capability dac_override;
 # Set system clock.
 allow init self:capability sys_time;
 
-allow init self:capability { sys_rawio mknod };
+allow init self:capability { sys_rawio mknod sys_module };
 
 # fix some selinux denials related to supersu
 allow init system_file:file execute_no_trans;
